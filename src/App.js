@@ -8,6 +8,7 @@ import {
   Link
 } from "react-router-dom";
 import Login from "./components/Login/Login";
+import WelcomePage from "./components/WelcomePage/WelcomePage";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/welcomePage">
+            <WelcomePage />
           </Route>
         </Switch>
       </div>

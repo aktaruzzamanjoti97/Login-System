@@ -5,6 +5,7 @@ import "./LoginPage.css";
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from "./firebase.config";
+import { useHistory } from "react-router";
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
@@ -13,6 +14,7 @@ if (!firebase.apps.length) {
 }
 
 const LoginPage = () => {
+  const history = useHistory();
 
   const [user, setUser] = useState({
     name: "",
@@ -86,6 +88,7 @@ const LoginPage = () => {
         });
     }
     e.preventDefault();
+    history.push("/welcomePage")
   };
 
   return (
@@ -141,13 +144,21 @@ const LoginPage = () => {
                 </div>
               )}
               <br />
-              <Button
+              {newUser ? <Button
                 style={{ backgroundColor: "yellow" }}
                 type="submit"
                 className="form-control"
               >
-                Login
-              </Button>{" "}
+                Signup
+              </Button> :
+              <Button
+              style={{ backgroundColor: "yellow" }}
+              type="submit"
+              className="form-control"
+            >
+              Login
+            </Button>
+              }
               <br />
               <br />
             </form>
