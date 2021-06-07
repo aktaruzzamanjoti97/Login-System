@@ -5,3 +5,9 @@
     background-size: cover;
     position: relative;
 }
+
+@media only screen and (max-width: 600px) {
+    .login-bg {
+      background-position: center center;
+    }
+  }

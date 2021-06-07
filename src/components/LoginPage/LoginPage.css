@@ -1,10 +1,16 @@
 .forgot-pass {
   margin-top: 138px;
 }
+.footer {
+  margin-top: 150px;
+}
 
 @media only screen and (max-width: 600px) {
   .forgot-pass {
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+  .footer {
+    display: none;
   }
 }

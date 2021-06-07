@@ -197,6 +197,10 @@ const LoginPage = () => {
               </p>
             )}
           </div>
+          <footer className="footer">
+            <small>Terms of Service</small>
+            <small className="mx-5">Privacy Policy</small>
+          </footer>
         </div>
         <div className="col-md-3">
           <div className="forgot-pass">

@@ -40,7 +40,7 @@ const Login = () => {
               </p>
             </div>
             <div className="text-center -mt-5">
-              <img style={{ width: "450px" }} src={loginBar} alt="" />
+              <img className="img-fluid" style={{ width: "450px" }} src={loginBar} alt="" />
             </div>
           </div>
         </div>
