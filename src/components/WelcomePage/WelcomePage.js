@@ -1,7 +1,6 @@
 import { Button } from '@material-ui/core';
 import React from 'react';
 import { useHistory } from 'react-router';
-import image from "../images/authentication.svg"
 
 const WelcomePage = () => {
 
@@ -22,11 +21,10 @@ const WelcomePage = () => {
                         <h5>Your Journey Starts from here</h5>
                     </div>
                     <h3 className="text-success">Thanks for being with us</h3>
-                    <div>
-                    <Button onClick={handleClick} style={{width: '300px'}} className="text-center" variant="contained" color="secondary">Back to login page</Button>
+                    <div className="my-2">
+                    <Button onClick={handleClick} style={{width: '300px'}} className="text-center" variant="contained" color="secondary">Back to Home page</Button>
                     </div>
                 </div>
-                
             </div>
         </div>
     );

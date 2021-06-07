@@ -91,6 +91,10 @@ const LoginPage = () => {
     history.push("/welcomePage")
   };
 
+  const handleClick = () => {
+    history.push("/forgotPass")
+  }
+
   return (
     <div className="container">
       <h1 className="m-5 text-warning">DOOF</h1>
@@ -196,7 +200,7 @@ const LoginPage = () => {
         </div>
         <div className="col-md-3">
           <div className="forgot-pass">
-            <small>Forgot Password?</small>
+            <small onClick={handleClick} style={{cursor: 'pointer'}}>Forgot Password?</small>
           </div>
         </div>
       </div>

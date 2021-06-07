@@ -1,3 +1,10 @@
-.forgot-pass{
-    margin-top: 138px;
+.forgot-pass {
+  margin-top: 138px;
+}
+
+@media only screen and (max-width: 600px) {
+  .forgot-pass {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
 }
